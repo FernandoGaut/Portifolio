@@ -1,0 +1,262 @@
+#intro {
+  background-image: url(../assets/img/Background_Intro.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 955px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  
+  #profile-img {
+    width: 112px;
+    height: 112px;
+    background-image: url(../assets/img/Profile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 56px;
+    border: 2px solid var(--red);
+  }
+  
+  p{
+    color: var(--gray-500);
+    font: var(--subtitle);
+    margin-bottom: 8px;
+
+    span{
+      color: var(--red);
+      font: var(--subtitle);
+    }
+  }
+
+  h1 {
+    font: var(--title-lg);
+    color: var(--gray-600);
+    margin-bottom: 26px;
+  }
+
+  h1 + p{
+    color: var(--gray-400);
+    font: var(--text-sm);
+    margin-bottom: 80px;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-bottom: 94px;
+
+    li {
+      display: flex;
+      align-items: center;
+      background-color: var(--gray-300);
+      font: var(--text-md);
+      color: var(--gray-500);
+      border-radius: 999px;
+      padding: 8px 16px;
+      img{
+        padding-right: 8px;
+      }
+    }
+  }
+
+  #scroll {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  #scroll:active {
+    animation: active paused 1s ease-in;
+  }
+  
+}
+
+#projects {
+  margin-bottom: 124px;
+  header{
+    text-align: center;
+  }
+
+  h4 {
+    color: var(--red);
+    font: var(--subtitle);
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    color: var(--gray-600);
+    font: var(--title-md);
+    margin-bottom: 56px;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 24px;
+   
+    div:hover {
+      animation: scale .7s ease-out backwards;
+      border: 1px solid var(--gray-400);
+      border-radius: .8rem;
+    }
+
+    div {
+      background-color: var(--gray-300);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    img { 
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font: var(--title-sm);
+      color: var(--gray-600);
+      margin-bottom: 20px;    
+    }
+
+    p {
+      font: var(--text-sm);
+      color: var(--gray-500);
+    }
+  }  
+}
+
+#services {
+  background-color: var(--gray-100);
+  padding-top: 88px;
+  padding-bottom: 120px;
+
+  header{
+    text-align: center;
+
+    h4 {
+      color: var(--red);
+      font: var(--subtitle);
+      margin-bottom: 8px;
+    }
+  
+    h3 {
+      color: var(--gray-600);
+      font: var(--title-md);
+      margin-bottom: 56px;
+      
+    }
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    column-gap: 24px;
+    
+    div {
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid var(--gray-200);
+      
+      img{
+        height: 44px;
+        width: 33px;
+        margin-bottom: 20px
+      }
+
+      h3 {
+        font: var(--title-sm);
+        color: var(--gray-600);
+      }
+
+      p {
+        font: var(--text-sm);
+        color: var(--gray-500);
+      }
+    }
+  }
+}
+
+.contact {
+  background-image: url(../assets/img/Background_Intro.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 955px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  
+  header {
+
+    h4 {
+      color: var(--purple);
+      font: var(--subtitle);
+    }
+
+    h2 {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      color: var(--gray-600);
+      font: var(--title-md);
+    }
+
+    p {
+      color: var(--gray-500);
+      font: var(--text-md);
+      margin-bottom: 48px;
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+
+    img {
+      width: 23px;
+      height: 23px;
+    }
+
+    p {
+      flex: 1;
+      text-align: left;
+      margin-left: 12px;
+      font: var(--text-md);
+      color: var(--gray-500);
+    }
+
+    .seta{
+      width: 15px;
+
+    }
+  }
+  
+  .social-links:hover {
+    background-color: #252525;
+  }
+}
